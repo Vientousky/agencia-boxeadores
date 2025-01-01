@@ -1,0 +1,56 @@
+.about {
+    width: 90%;
+    max-width: 1100px;
+    min-height: 64vh;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    margin: auto;
+
+    &.aboutText {
+        max-width: 60%;
+        flex:  0 60%;
+    }
+
+    &.aboutImage {
+        max-width: 40%;
+        flex: 40% 0 0;
+    }
+}
+
+
+.aboutText h1 {
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #D72638 0%, #ffa500 100%);
+    background-clip: text;
+    color: transparent;
+    
+}
+
+.aboutText p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+
+    .strong {
+        color: orange;
+    }
+
+    .strong2 {
+        color: rgb(0, 132, 255);
+    }
+
+    .strong3 {
+        color: rgb(138, 91, 214);
+    }
+
+}
+
+.aboutImage img {
+    border-radius: 20px;
+} 

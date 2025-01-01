@@ -1,0 +1,49 @@
+:root {
+    --bg-1: #11121a;
+    --bg-2: #16181c;
+    --font-montserrat: 'Source_Code_Pro', sans-serif;
+
+    --card:#16181c;
+    --card-boder:#32353f;
+
+    --aside-footer: #151621;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+    
+}
+
+p {
+    text-wrap: pretty;
+    
+}
+
+body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: var(--bg-1);
+    color: #e8eaed;
+    font-family: var(--font-montserrat);
+}
+
+.central {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+}
