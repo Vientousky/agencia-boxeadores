@@ -86,5 +86,6 @@
 @media (min-height: 500) {
     .home {
         min-height: 133vh;
+        
     }
 }
