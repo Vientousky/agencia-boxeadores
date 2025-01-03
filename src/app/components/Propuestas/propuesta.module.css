@@ -56,7 +56,7 @@
         box-shadow: 0 4px 10px rgba(83, 82, 82, 0.301);
     }
 
-    h1 {
+    & h1 {
         font-size: 1.8rem;
         margin-bottom: 16px;
         text-transform: uppercase;
@@ -65,7 +65,7 @@
 
     }
 
-    p {
+    & p {
         font-size: 1.1rem;
         line-height: 1.6;
 
