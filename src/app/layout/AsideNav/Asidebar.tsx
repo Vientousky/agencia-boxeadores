@@ -1,0 +1,58 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import AsideNav from "./AsideNav";
+import { BsTextIndentLeft } from "react-icons/bs";
+import "./asidebar.css";
+
+const Asidebar: React.FC = () => {
+  const [isMenuClosed, setIsMenuClosed] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMenuClosed(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuClosed(!isMenuClosed);
+  };
+
+
+
+  return (
+    <aside className={`asidebar ${isMenuClosed ? "closed" : ""}`}>
+      <header className="asideLogo">
+        <h2>Chaco Boxeo</h2>
+        <button onClick={toggleMenu}>
+          <BsTextIndentLeft />
+        </button>
+      </header>
+
+      {/* Pasamos la función openMenu como prop */}
+      <AsideNav  />
+
+      <footer className="login">
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e8eaed"
+          >
+            <path d="M400-400h160v-80H400v80Zm0-120h320v-80H400v80Zm0-120h320v-80H400v80Zm-80 400q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z" />
+          </svg>
+          <span>Iniciar Sesión</span>
+        </button>
+      </footer>
+    </aside>
+  );
+};
+
+export default Asidebar;

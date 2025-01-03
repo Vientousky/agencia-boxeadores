@@ -54,3 +54,23 @@
 .aboutImage img {
     border-radius: 20px;
 } 
+
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .aboutText {
+        max-width: 100%;
+        flex: 100% 0 0;
+    }
+
+    .aboutImage {
+        max-width: 100%;
+        flex: 100% 0 0;
+
+        display: none;
+    }
+    
+}

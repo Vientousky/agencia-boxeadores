@@ -1,7 +1,7 @@
-import Inicio from "./components/Inicio/Inicio";
-import Nosotros from "./components/Nosotros/Nosotros";
-import Propuestas from "./components/Propuestas/Propuestas";
-import Contacto from "./components/Contacto/Contacto"
+import Inicio from "./components/inicio/Inicio";
+import Nosotros from "./components/nosotros/Nosotros";
+import Propuestas from "./components/propuestas/Propuestas";
+import Contacto from "./components/contacto/Contacto"
 
 
 

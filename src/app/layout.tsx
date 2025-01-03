@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Asidebar from "./layout/Asidebar";
+import Asidebar from "./layout/AsideNav/Asidebar";
 import Footer from "./layout/Footer";
 import "../styles/global.css";
 

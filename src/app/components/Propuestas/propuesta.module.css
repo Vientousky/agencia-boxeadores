@@ -26,7 +26,6 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: 300ms ease;
 
-
 }
     
 
@@ -73,6 +72,19 @@
     }
 }
 
-@media(max-width: 600px ) {
-    
+@media (max-width: 800px) {
+    .Propuestas {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .PropuestasImg {
+        display: none;
+    }
+
+    .propuestas__text {
+        max-width: 90%;
+        flex: 0 90%;
+    }
+
 }

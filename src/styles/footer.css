@@ -35,3 +35,15 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+
+    .footer {
+        height: 300px;
+
+        h2 {
+            font-size: 1.6rem;
+        }
+    }
+    
+}
