@@ -1,4 +1,4 @@
-.home{
+.home {
     min-height: 100vh;
     width: 100%;
     background: linear-gradient(#282a3799, #282a3799), url(/logo.jpg) center / cover no-repeat;
@@ -19,7 +19,7 @@
         color: rgb(222, 223, 228);
     }
 
-    h1 {
+    & h1 {
         max-width: 30ch;
         font-size: 3.4rem;
         line-height: 1.2;
@@ -29,7 +29,7 @@
         }
     }
 
-    p {
+    & p {
         font-size: 1.6rem;
         font-weight: 500;
         max-width: 48ch;
@@ -43,19 +43,19 @@
     gap: 3rem;
 
     button {
-        padding: 10px 20px ;
+        padding: 10px 20px;
         font-size: 1.1rem;
         border-radius: 6px;
         border: none;
         cursor: pointer;
-        background:var(--bg-1);
+        background: var(--bg-1);
         color: var(--text-1);
         transition: all 0.3s;
 
         &:hover {
             background: var(--bg-2);
         }
-        
+
         &:active {
             transform: scale(0.95);
         }
@@ -77,7 +77,7 @@
     }
 
     .Buttons {
-        
+
         flex-direction: column;
         gap: 1rem;
     }

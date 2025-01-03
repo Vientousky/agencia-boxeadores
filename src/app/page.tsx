@@ -1,7 +1,7 @@
 import Inicio from "./components/inicio/Inicio";
 import Nosotros from "./components/nosotros/Nosotros";
 import Propuestas from "./components/propuestas/Propuestas";
-import Contacto from "./components/contacto/Contacto"
+import Contacto from "./components/Contacto/Contacto"
 
 
 
